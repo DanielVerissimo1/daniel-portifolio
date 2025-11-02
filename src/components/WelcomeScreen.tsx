@@ -107,7 +107,7 @@ const HeroSection = () => {
               data-aos-delay="800"
             >
               <a 
-                href="/Daniel Verissimo - Currículo.pdf"
+                href="/Currículo - Daniel Verissimo.pdf"
                 download
                 className="w-full sm:w-auto"
               >
