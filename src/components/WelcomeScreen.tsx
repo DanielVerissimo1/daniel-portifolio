@@ -95,7 +95,7 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          {/* Buttons*/}
+
             <div 
               className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 w-full max-w-md mx-auto"
               data-aos="fade-up"
