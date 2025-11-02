@@ -114,7 +114,6 @@ const techStacks: TechStack[] = [
   { icon: "/javascript.svg", language: "JavaScript" },
   { icon: "/typescript.svg", language: "TypeScript" },
   { icon: "/reactjs.svg", language: "React" },
-  { icon: "/science.png", language: "React Native" },
   { icon: "/vite.svg", language: "Vite" },
   { icon: "/next.svg", language: "Next.js" },
   { icon: "/expo.svg", language: "Expo" },
