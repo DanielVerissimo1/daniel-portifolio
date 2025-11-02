@@ -11,7 +11,7 @@ const Navbar = () => {
     () => [
       { id: "hero", label: "Inicio" },
       { id: "about", label: "Sobre" },
-      { id: "portfolio", label: "Portfolio" },
+      { id: "portfolio", label: "Portfólio" },
       { id: "contato", label: "Contato" },
     ],
     [],

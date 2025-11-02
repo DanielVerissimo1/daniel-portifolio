@@ -172,11 +172,11 @@ const AboutSection = () => {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
         {statsData.map((stat) => (
           <div 
             key={stat.label} 
-            className="relative group"
+            className={`relative group ${stat.label === 'Localização' ? 'md:col-span-2 lg:col-span-1' : ''}`}
             data-aos={stat.animation}
             data-aos-duration="1300"
           >
