@@ -29,48 +29,54 @@ interface TechStack {
 const mockProjects: Project[] = [
   {
     id: 1,
+    Img: "/topic.png",
+    Title: "Topic - Plataforma de inovação aberta",
+    Description: "Desenvolvi a interface completa de uma plataforma de inovaçao aberta TOPIC para a Ninna Hub,uma solução de inovação aberta voltada para corporações, em colaboração com Amontada Valley.",
+    Link: "https://plataforma-inovacao-aberta.vercel.app/"
+  },{
+    id: 2,
     Img: "/amotur.jpeg",
     Title: "Mapa interativo - AmoTur",
     Description: "Desenvolvido em colaboração com a Squad do Amontada Valley, este projeto foi criado para atender a uma demanda real da Associação de Turismo Amotur.",
     Link: "https://amotur-k1qt.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     Img: "/cafearoma.jpeg",
     Title: "Site - Café Aroma",
     Description: "Site completo desenvolvido para o Café Aroma, com foco em navegação intuitiva, pedidos online, reserva de mesas e loja virtual.",
     Link: "https://danielsantoss1200.wixsite.com/my-site-1",
   },
   {
-    id: 3,
+    id: 4,
     Img: "/portfolio.png",
     Title: "Portfólio Pessoal",
     Description: "Portfólio Pessoal desenvolvido para apresentar meus projetos, habilidades e experiências de forma clara e organizada. A aplicação conta com um design responsivo e moderno, permitindo que qualquer pessoa conheça meu trabalho de maneira intuitiva.",
     Link: "https://daniel-verissimodev.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     Img: "/github.png",
     Title: "GitHub Explorer",
     Description: "GitHub Explorer é uma aplicação que permite pesquisar repositórios e perfis do GitHub de forma rápida e intuitiva. Com ele, é possível visualizar informações detalhadas dos projetos, conferir o perfil dos desenvolvedores e explorar conteúdos diretamente pela interface da aplicação.",
     Link: "https://explorerepositorios.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     Img: "/briso.png",
     Title: "Brisô Delivery",
     Description: "Brisô Delivery é uma plataforma que conecta moradores e turistas de Icaraí de Amontada a comércios e serviços locais. Criado para resolver a dificuldade de encontrar entregas e estabelecimentos, antes feitos apenas por indicações informais.",
     Link: "https://briso-delivery.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     Img: "/todo.png",
     Title: "To-Do List",
     Description: "To-Do List é uma aplicação simples e eficiente para organizar tarefas diárias. Desenvolvida com foco em praticidade, ela armazena os dados diretamente no navegador utilizando localStorage, garantindo que as tarefas sejam salvas mesmo após fechar a página.",
     Link: "https://to-do-list-kappa-jet.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     Img: "/rio.jpeg",
     Title: "Landing Page - Projeto Rio Aracatiaçu",
     Description: "Landing page desenvolvida para o projeto Rio Aracatiaçu: Passado e Futuro Sustentável, apresentada no Ceará Científico 2025. A proposta uniu design, educação ambiental e engajamento comunitário para promover a preservação do rio em Amontada-CE.",
@@ -81,14 +87,23 @@ const mockProjects: Project[] = [
 const mockCertificates: Certificate[] = [
   {
     id: 1,
+    Img: "/certificate.png",
+  },{
+    id: 2,
     Img: "/InovationCertificado.png",
   },
   {
-    id: 2,
+    id: 3,
     Img: "/aws.png",
   },
   {
-    id: 3,
+    id: 4,
+    Img: "/certificate-_1_.png",
+  },{
+    id: 5,
+    Img: "/certificate-_2_.png",
+  },{
+    id: 6,
     Img: "/google.png",
   },
 ];
@@ -99,8 +114,10 @@ const techStacks: TechStack[] = [
   { icon: "/javascript.svg", language: "JavaScript" },
   { icon: "/typescript.svg", language: "TypeScript" },
   { icon: "/reactjs.svg", language: "React" },
+  { icon: "/science.png", language: "React Native" },
   { icon: "/vite.svg", language: "Vite" },
   { icon: "/next.svg", language: "Next.js" },
+  { icon: "/expo.svg", language: "Expo" },
   { icon: "/nodejs.svg", language: "Node.js" },
   { icon: "/tailwind.svg", language: "Tailwind CSS" },
   { icon: "/MUI.svg", language: "Material UI" },
