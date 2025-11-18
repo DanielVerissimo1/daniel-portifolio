@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Modal, IconButton, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
+import Image from "next/image";
 
 interface CertificateProps {
   ImgSertif: string; 
@@ -31,13 +32,14 @@ const Certificate: React.FC<CertificateProps> = ({ ImgSertif }) => {
         }}
         onClick={handleOpen}
       >
-        <img
+        <Image
           src={ImgSertif}
           alt="Certificate"
+          width={400}
+          height={300}
           style={{
             width: "100%",
             height: "300px",
-            display: "block",
             objectFit: "cover"
           }}
         />
@@ -107,11 +109,12 @@ const Certificate: React.FC<CertificateProps> = ({ ImgSertif }) => {
               p: 1,
             }}
           >
-            <img
+            <Image
               src={ImgSertif}
               alt="Certificado em Full View"
+              width={800}
+              height={600}
               style={{
-                display: "block",
                 width: "100%",
                 height: "auto",
                 maxHeight: "85vh",

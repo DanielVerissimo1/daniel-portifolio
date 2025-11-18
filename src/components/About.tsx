@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useEffect, useMemo } from 'react';
-import { Code, Heart, Globe, Sparkles, UserCheck} from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Sparkles, UserCheck, Code } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Image from 'next/image'; 
+import Image from 'next/image';
+import { statsData } from '../data/About'; 
 
 const AboutSection = () => {
   useEffect(() => {
@@ -19,29 +20,7 @@ const AboutSection = () => {
   }, []);
 
   
-  const statsData = useMemo(() => [
-    {
-      icon: Heart,
-      color: "from-[#6366f1] to-[#a855f7]",
-      label: "Paixão",
-      description: "Gerar valor por meio da tecnologia, explorando ideias, lendo livros, fazendo pesquisas e criando interfaces que conectam e inspiram.",
-      animation: "fade-right"
-    },
-    {
-      icon: Code,
-      color: "from-[#a855f7] to-[#6366f1]",
-      label: "Metodologia",
-      description: "Pratico desenvolvimento ágil com foco em entregas eficientes, priorizando código limpo e de fácil manutenção.", 
-      animation: "fade-up"
-    },
-    {
-      icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
-      label: "Localização",
-      description: "Atualmente moro em Amontada-CE",
-      animation: "fade-left"
-    },
-  ], []);
+
 
   return (
     <section 

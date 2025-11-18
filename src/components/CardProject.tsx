@@ -8,9 +8,10 @@ interface CardProjectProps {
   Description: string;
   Link?: string;
   id?: string;
+  stacks?: string[];
 }
 
-const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link: ProjectLink }) => {
+const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link: ProjectLink, stacks }) => {
 
   return (
     <div className="group relative w-full h-full">
@@ -39,6 +40,23 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
             <p className="text-gray-300/80 text-sm leading-relaxed line-clamp-3 flex-1">
               {Description}
             </p>
+            
+            {/* tecnologias dos card*/}
+            {stacks && stacks.length > 0 && (
+              <div>
+                <div className="flex flex-wrap gap-1.5">
+                  {stacks.map((stack, index) => (
+                    <span
+                      key={index} 
+                      className="px-3 py-1.5 text-xs font-medium bg-gradient-to-r  from-blue-500/20 to-purple-500/20 text-blue-200 rounded-md"
+        
+                    >
+                      {stack}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
             
             {/* Botões de ação */}
             <div className="pt-4 flex items-center justify-between gap-2">

@@ -6,126 +6,11 @@ import { Code, Award, Boxes } from "lucide-react";
 import CardProject from "./CardProject";
 import TechStackIcon from "./TechStackIcon";
 import Certificate from "./Certificate";
+import { projects, type Project } from "../data/Projetos";
+import { certificates, type Certificate as CertificateType } from "../data/Certificado";
+import { techStacks } from "../data/Stack";
 
-interface Project {
-  id: number;
-  Img: string;
-  Title: string;
-  Description: string;
-  Link: string;
-}
 
-interface Certificate {
-  id: number;
-  Img: string;
-}
-
-interface TechStack {
-  icon: string;
-  language: string;
-}
-
-// Dados mocados
-const mockProjects: Project[] = [
-  {
-    id: 1,
-    Img: "/topic.png",
-    Title: "Topic - Plataforma de inovação aberta",
-    Description: "Desenvolvi a interface completa de uma plataforma de inovaçao aberta TOPIC para a Ninna Hub,uma solução de inovação aberta voltada para corporações, em colaboração com Amontada Valley.",
-    Link: "https://plataforma-inovacao-aberta.vercel.app/"
-  },{
-    id: 2,
-    Img: "/amotur.jpeg",
-    Title: "Mapa interativo - AmoTur",
-    Description: "Desenvolvido em colaboração com a Squad do Amontada Valley, este projeto foi criado para atender a uma demanda real da Associação de Turismo Amotur.",
-    Link: "https://amotur-k1qt.vercel.app/",
-  },
-  {
-    id: 3,
-    Img: "/cafearoma.jpeg",
-    Title: "Site - Café Aroma",
-    Description: "Site completo desenvolvido para o Café Aroma, com foco em navegação intuitiva, pedidos online, reserva de mesas e loja virtual.",
-    Link: "https://danielsantoss1200.wixsite.com/my-site-1",
-  },
-  {
-    id: 4,
-    Img: "/portfolio.png",
-    Title: "Portfólio Pessoal",
-    Description: "Portfólio Pessoal desenvolvido para apresentar meus projetos, habilidades e experiências de forma clara e organizada. A aplicação conta com um design responsivo e moderno, permitindo que qualquer pessoa conheça meu trabalho de maneira intuitiva.",
-    Link: "https://daniel-verissimodev.vercel.app/",
-  },
-  {
-    id: 5,
-    Img: "/github.png",
-    Title: "GitHub Explorer",
-    Description: "GitHub Explorer é uma aplicação que permite pesquisar repositórios e perfis do GitHub de forma rápida e intuitiva. Com ele, é possível visualizar informações detalhadas dos projetos, conferir o perfil dos desenvolvedores e explorar conteúdos diretamente pela interface da aplicação.",
-    Link: "https://explorerepositorios.vercel.app/",
-  },
-  {
-    id: 6,
-    Img: "/briso.png",
-    Title: "Brisô Delivery",
-    Description: "Brisô Delivery é uma plataforma que conecta moradores e turistas de Icaraí de Amontada a comércios e serviços locais. Criado para resolver a dificuldade de encontrar entregas e estabelecimentos, antes feitos apenas por indicações informais.",
-    Link: "https://briso-delivery.vercel.app/",
-  },
-  {
-    id: 7,
-    Img: "/todo.png",
-    Title: "To-Do List",
-    Description: "To-Do List é uma aplicação simples e eficiente para organizar tarefas diárias. Desenvolvida com foco em praticidade, ela armazena os dados diretamente no navegador utilizando localStorage, garantindo que as tarefas sejam salvas mesmo após fechar a página.",
-    Link: "https://to-do-list-kappa-jet.vercel.app/",
-  },
-  {
-    id: 8,
-    Img: "/rio.jpeg",
-    Title: "Landing Page - Projeto Rio Aracatiaçu",
-    Description: "Landing page desenvolvida para o projeto Rio Aracatiaçu: Passado e Futuro Sustentável, apresentada no Ceará Científico 2025. A proposta uniu design, educação ambiental e engajamento comunitário para promover a preservação do rio em Amontada-CE.",
-    Link: "https://rio-aracatia-u.vercel.app/",
-  }
-];
-
-const mockCertificates: Certificate[] = [
-  {
-    id: 1,
-    Img: "/certificate.png",
-  },{
-    id: 2,
-    Img: "/InovationCertificado.png",
-  },
-  {
-    id: 3,
-    Img: "/aws.png",
-  },
-  {
-    id: 4,
-    Img: "/certificate-_1_.png",
-  },{
-    id: 5,
-    Img: "/certificate-_2_.png",
-  },{
-    id: 6,
-    Img: "/google.png",
-  },
-];
-
-const techStacks: TechStack[] = [
-  { icon: "/html.svg", language: "HTML" },
-  { icon: "/css.svg", language: "CSS" },
-  { icon: "/javascript.svg", language: "JavaScript" },
-  { icon: "/typescript.svg", language: "TypeScript" },
-  { icon: "/reactjs.svg", language: "React" },
-  { icon: "/vite.svg", language: "Vite" },
-  { icon: "/next.svg", language: "Next.js" },
-  { icon: "/expo.svg", language: "Expo" },
-  { icon: "/nodejs.svg", language: "Node.js" },
-  { icon: "/tailwind.svg", language: "Tailwind CSS" },
-  { icon: "/MUI.svg", language: "Material UI" },
-  { icon: "/bootstrap.svg", language: "Bootstrap" },
-  { icon: "/wordpress.svg", language: "Wordpress" },
-  { icon: "/wix.svg", language: "Wix" },
-  { icon: "/figma.svg", language: "Figma" },
-  { icon: "/vercel.svg", language: "Vercel" }
-];
 
 const ToggleButton = ({ 
   onClick, 
@@ -182,8 +67,8 @@ const TabPanel = ({
 
 const Portfolio = () => {
   const [value, setValue] = useState(0);
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [certificates, setCertificates] = useState<Certificate[]>([]);
+  const [projectsData, setProjectsData] = useState<Project[]>([]);
+  const [certificatesData, setCertificatesData] = useState<CertificateType[]>([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [showAllCertificates, setShowAllCertificates] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -202,8 +87,8 @@ const Portfolio = () => {
   }, []);
 
   useEffect(() => {
-    setProjects(mockProjects);
-    setCertificates(mockCertificates);
+    setProjectsData(projects);
+    setCertificatesData(certificates);
   }, []);
 
   const handleChange = (newValue: number) => {
@@ -218,8 +103,8 @@ const Portfolio = () => {
     }
   };
 
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
-  const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
+  const displayedProjects = showAllProjects ? projectsData : projectsData.slice(0, initialItems);
+  const displayedCertificates = showAllCertificates ? certificatesData : certificatesData.slice(0, initialItems);
 
   return (
     <div className="md:px-[10%] px-[5%] w-full z-1000 sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="portfolio">
@@ -275,12 +160,13 @@ const Portfolio = () => {
                     Description={project.Description}
                     Link={project.Link}
                     id={project.id.toString()}
+                    stacks={project.stacks}
                   />
                 </div>
               ))}
             </div>
           </div>
-          {projects.length > initialItems && (
+          {projectsData.length > initialItems && (
             <div className="mt-6 w-full flex justify-start cursor-pointer">
               <ToggleButton
                 onClick={() => toggleShowMore('projects')}
@@ -304,7 +190,7 @@ const Portfolio = () => {
               ))}
             </div>
           </div>
-          {certificates.length > initialItems && (
+          {certificatesData.length > initialItems && (
             <div className="mt-6 w-full flex justify-start">
               <ToggleButton
                 onClick={() => toggleShowMore('certificates')}
