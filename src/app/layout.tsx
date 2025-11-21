@@ -25,6 +25,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Daniel Verissimo",
   description: "Portfólio profissional de Daniel Verissimo",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
