@@ -4,20 +4,21 @@ export interface TechStack {
 }
 
 export const techStacks: TechStack[] = [
-  { icon: "/html.svg", language: "HTML" },
-  { icon: "/css.svg", language: "CSS" },
-  { icon: "/javascript.svg", language: "JavaScript" },
-  { icon: "/typescript.svg", language: "TypeScript" },
-  { icon: "/reactjs.svg", language: "React" },
-  { icon: "/vite.svg", language: "Vite" },
-  { icon: "/next.svg", language: "Next.js" },
-  { icon: "/expo.svg", language: "Expo" },
-  { icon: "/nodejs.svg", language: "Node.js" },
-  { icon: "/tailwind.svg", language: "Tailwind CSS" },
-  { icon: "/MUI.svg", language: "Material UI" },
-  { icon: "/bootstrap.svg", language: "Bootstrap" },
-  { icon: "/wordpress.svg", language: "Wordpress" },
-  { icon: "/wix.svg", language: "Wix" },
-  { icon: "/figma.svg", language: "Figma" },
-  { icon: "/vercel.svg", language: "Vercel" }
+  { icon: "/tech-stack/html.svg", language: "HTML" },
+  { icon: "/tech-stack/css.svg", language: "CSS" },
+  { icon: "/tech-stack/javascript.svg", language: "JavaScript" },
+  { icon: "/tech-stack/typescript.svg", language: "TypeScript" },
+  { icon: "/tech-stack/reactjs.svg", language: "React" },
+  { icon: "/tech-stack/React-Query.svg", language: "TanstackQuery" },
+  { icon: "/tech-stack/vite.svg", language: "Vite" },
+  { icon: "/tech-stack/next.svg", language: "Next.js" },
+  { icon: "/tech-stack/expo.svg", language: "Expo" },
+  { icon: "/tech-stack/nodejs.svg", language: "Node.js" },
+  { icon: "/tech-stack/tailwind.svg", language: "Tailwind CSS" },
+  { icon: "/tech-stack/MUI.svg", language: "Material UI" },
+  { icon: "/tech-stack/bootstrap.svg", language: "Bootstrap" },
+  { icon: "/tech-stack/wordpress.svg", language: "Wordpress" },
+  { icon: "/tech-stack/wix.svg", language: "Wix" },
+  { icon: "/tech-stack/figma.svg", language: "Figma" },
+  { icon: "/tech-stack/vercel.svg", language: "Vercel" }
 ];

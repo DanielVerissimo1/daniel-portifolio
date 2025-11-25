@@ -133,7 +133,7 @@ const AboutSection = () => {
                 <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
                 
                 <Image
-                  src="/img-Daniel.png"
+                  src="/profile/img-Daniel.png"
                   alt="Profile"
                   fill
                   className="object-cover transition-all duration-700 group-hover:scale-110"
