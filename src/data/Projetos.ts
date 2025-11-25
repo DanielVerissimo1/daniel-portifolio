@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    Img: "/icons/github.png",
+    Img: "/projects/github.png",
     Title: "GitHub Explorer",
     Description: "GitHub Explorer é uma aplicação que permite pesquisar repositórios e perfis do GitHub de forma rápida e intuitiva. Com ele, é possível visualizar informações detalhadas dos projetos, conferir o perfil dos desenvolvedores e explorar conteúdos diretamente pela interface da aplicação.",
     Link: "https://explorerepositorios.vercel.app/",

@@ -14,7 +14,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 3,
-    Img: "/tech-stack/aws.png",
+    Img: "/certificates/aws.png",
   },
   {
     id: 4,
@@ -26,6 +26,6 @@ export const certificates: Certificate[] = [
   },
   {
     id: 6,
-    Img: "/icons/google.png",
+    Img: "/certificates/google.png",
   },
 ];
