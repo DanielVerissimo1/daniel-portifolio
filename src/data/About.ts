@@ -20,7 +20,7 @@ export const statsData: StatData[] = [
     icon: Code,
     color: "from-[#a855f7] to-[#6366f1]",
     label: "Metodologia",
-    description: "Pratico desenvolvimento ágil com foco em entregas eficientes, priorizando código limpo e de fácil manutenção.", 
+    description: "Prática de metodologias ágeis, como Scrum e Kanban, com foco em entregas contínuas e eficientes, priorizando código limpo e de fácil manutenção.", 
     animation: "fade-up"
   },
   {

@@ -120,7 +120,7 @@ const HeroSection = () => {
                 className="w-full sm:w-auto"
               >
                 <button className="w-full cursor-pointer sm:w-auto px-6 py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium hover:bg-[#a855f7]/10 transition-all hover:scale-[1.02] flex items-center gap-2">
-                  <UserCheck className="w-5 h-5" /> Contate Me
+                  <UserCheck className="w-5 h-5" /> Fale Comigo
                 </button>
               </a>
             </div>

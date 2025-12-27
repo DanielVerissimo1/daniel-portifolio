@@ -13,7 +13,7 @@ export const projects: Project[] = [
     Img: "/projects/topic.png",
     Title: "Topic - Plataforma de inovação aberta",
     Description: "Desenvolvi a interface completa de uma plataforma de inovaçao aberta TOPIC para a Ninna Hub,uma solução de inovação aberta voltada para corporações, em colaboração com Amontada Valley.",
-    Link: "https://plataforma-inovacao-aberta.vercel.app/",
+    Link: " /",
     stacks: ["React", "TypeScript", "Tailwind CSS", "Next.js"]
   },
   {
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     Img: "/projects/amotur.jpeg",
     Title: "Mapa interativo - AmoTur",
     Description: "Desenvolvido em colaboração com a Squad do Amontada Valley, este projeto foi criado para atender a uma demanda real da Associação de Turismo Amotur.",
-    Link: "https://amotur-k1qt.vercel.app/",
+    Link: "https://litormap.vercel.app/",
     stacks: ["React", "TypeScript", "Next.js", "React Leaflet"]
   },
   {

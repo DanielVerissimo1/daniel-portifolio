@@ -99,7 +99,7 @@ const AboutSection = () => {
               data-aos-duration="800"
             >
               <button className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r text-center justify-center from-[#6366f1] to-[#a855f7] text-white font-medium hover:shadow-lg transition-all flex items-center gap-2 cursor-pointer hover:scale-105">
-                <UserCheck className="w-5 h-5" /> Contate Me
+                <UserCheck className="w-5 h-5" /> Fale Comigo
               </button>
             </a>
 
@@ -133,10 +133,10 @@ const AboutSection = () => {
                 <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
                 
                 <Image
-                  src="/profile/img-Daniel.png"
+                  src="/profile/imagem daniel02.png"
                   alt="Profile"
                   fill
-                  className="object-cover transition-all duration-700 group-hover:scale-110"
+                  className="object-cover object-top transition-all duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
 
