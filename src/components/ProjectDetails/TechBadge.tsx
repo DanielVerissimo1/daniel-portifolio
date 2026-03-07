@@ -1,6 +1,6 @@
-import { Globe, Layout, Code, Package, Database, Server  } from "lucide-react";
+import { Globe, Layout, Code, Package, Database, Server, LucideIcon  } from "lucide-react";
 
-const TECH_ICONS: Record<string, any> = {
+const TECH_ICONS: Record<string, LucideIcon> = {
   React: Globe,
   "React Native": Globe,
   "Next.js": Globe,
