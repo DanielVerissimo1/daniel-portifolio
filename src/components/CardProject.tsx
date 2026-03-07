@@ -1,6 +1,8 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { toSlug } from '@/lib/slug';
 
 interface CardProjectProps {
   Img: string;
@@ -40,8 +42,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
             <p className="text-gray-300/80 text-sm leading-relaxed line-clamp-3 flex-1">
               {Description}
             </p>
-            
-            {/* tecnologias dos card*/}
+             {/* tecnologias dos card*/}
             {stacks && stacks.length > 0 && (
               <div>
                 <div className="flex flex-wrap gap-1.5">
@@ -57,6 +58,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
                 </div>
               </div>
             )}
+          
             
             {/* Botões de ação */}
             <div className="pt-4 flex items-center justify-between gap-2">
@@ -65,15 +67,22 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
                   href={ProjectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors duration-200 px-3 py-1.5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20"
+                  className="inline-flex items-center space-x-2 text-blue-100 hover:text-blue-200 "
                 >
-                  <span className="text-sm font-medium">Ver No Ar</span>
+                  <span className="text-md font-medium">Ver No Ar</span>
                   <ExternalLink className="w-4 h-4" />
                 </a>
               ) : (
                 <span className="text-gray-500 text-sm px-3 py-1.5">Demo Not Available</span>
               )}
 
+              <Link
+                href={`/project/${toSlug(Title)}`}
+                className="flex items-center space-x-2 text-blue-100 hover:text-blue-300 transition-colors duration-200 px-3 py-1.5 rounded-lg bg-blue-100/10 hover:bg-blue-200/20 "
+              >
+                <span className="text-md font-medium">Detalhes</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>

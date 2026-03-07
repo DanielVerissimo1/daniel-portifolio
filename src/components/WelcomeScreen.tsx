@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   const dados = {
     welcomeTexts: ["Daniel", "Verissimo"],
-    titleTexts: ["Desenvolvedor", "Front-end"],
+    titleTexts: ["Desenvolvedor", "Full-Stack"],
     icons: [Mail, Linkedin, Github],
     hrefs: [
       "mailto:danielsantoss1300@gamil.com", 
