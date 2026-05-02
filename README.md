@@ -155,7 +155,7 @@ daniel-portifolio/
 ## 👨‍💻 Autor
 
 <p align="center">
-  <img src="public/profile/img-Daniel.png" width="100" style="border-radius: 50%;" alt="Daniel Verissimo"/>
+  <img src="public/profile/Imagem-daniel02.png" width="100" style="border-radius: 50%;" alt="Daniel Verissimo"/>
   <br/>
   <strong>Daniel Verissimo</strong>
   <br/>
