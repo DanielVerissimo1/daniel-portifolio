@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   const dados = {
     welcomeTexts: ["Daniel", "Verissimo"],
-    titleTexts: ["Desenvolvedor", "Front-end"],
+    titleTexts: ["Desenvolvedor", "Front-End"],
     icons: [Mail, Linkedin, Github],
     hrefs: [
       "mailto:danielsantoss1300@gamil.com", 
@@ -67,7 +67,7 @@ const HeroSection = () => {
             data-aos="fade-in"
             data-aos-delay="300"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
               <div className="mb-4 sm:mb-6">
                 {dados.welcomeTexts.map((text, index) => (
                   <span
@@ -107,7 +107,7 @@ const HeroSection = () => {
               data-aos-delay="800"
             >
               <a 
-                href="/Currículo - Daniel Verissimo.pdf"
+                href="/Daniel-Verissimo-Font-End.pdf"
                 download
                 className="w-full sm:w-auto"
               >
