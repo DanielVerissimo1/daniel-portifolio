@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   const dados = {
     welcomeTexts: ["Daniel", "Verissimo"],
-    titleTexts: ["Desenvolvedor", "Full-Stack"],
+    titleTexts: ["Desenvolvedor", "Front-End"],
     icons: [Mail, Linkedin, Github],
     hrefs: [
       "mailto:danielsantoss1300@gamil.com", 
@@ -107,7 +107,7 @@ const HeroSection = () => {
               data-aos-delay="800"
             >
               <a 
-                href="/Currículo - Daniel Verissimo.pdf"
+                href="/Daniel-Verissimo-Font-End.pdf"
                 download
                 className="w-full sm:w-auto"
               >
