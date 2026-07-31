@@ -21,7 +21,7 @@ const ToggleButton = ({
 }) => (
   <button
     onClick={onClick}
-    className="px-3 py-1.5 text-slate-300 hover:text-white text-sm font-medium transition-all duration-300 ease-in-out flex items-center gap-2 bg-white/5 hover:bg-white/10 rounded-md border border-white/10 hover:border-white/20 backdrop-blur-sm group relative overflow-hidden"
+    className="px-3 py-1.5 text-[#cbacf9] hover:text-[#000319] text-sm font-medium transition-all duration-300 ease-in-out flex items-center gap-2 bg-[#cbacf9]/10 hover:bg-[#cbacf9] rounded-md border border-[#cbacf9]/20 hover:border-[#cbacf9] backdrop-blur-sm group relative overflow-hidden"
   >
     <span className="relative z-10 flex items-center gap-2">
       {isShowingMore ? "Ver Menos" : "Ver Mais"}
@@ -42,7 +42,7 @@ const ToggleButton = ({
         <polyline points={isShowingMore ? "18 15 12 9 6 15" : "6 9 12 15 18 9"}></polyline>
       </svg>
     </span>
-    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500/50 transition-all duration-300 group-hover:w-full"></span>
+    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#cbacf9] transition-all duration-300 group-hover:w-full"></span>
   </button>
 );
 
@@ -107,10 +107,10 @@ const Portfolio = () => {
   const displayedCertificates = showAllCertificates ? certificatesData : certificatesData.slice(0, initialItems);
 
   return (
-    <div className="md:px-[10%] px-[5%] w-full z-1000 sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="portfolio">
+    <div className="md:px-[10%] px-[5%] w-full min-w-0 z-1000 sm:mt-0 mt-[3rem] bg-[#000319]" id="portfolio">
       <div className="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
-        <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-          Mostruário de Portfólio
+        <h2 className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-white">
+          Mostruário de <span className="text-[#cbacf9]">Portfólio</span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
           Explore minha jornada através de projetos, certificações e experiência técnica. Cada seção representa um marco na minha trajetória de aprendizado contínuo.
@@ -146,11 +146,12 @@ const Portfolio = () => {
 
         {/* Conteúdo das abas */}
         <TabPanel value={value} index={0}>
-          <div className="container z-100 mx-auto flex justify-center items-center overflow-hidden ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+          <div className="w-full min-w-0 mx-auto flex justify-center items-center overflow-visible">
+            <div className="grid w-full min-w-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
               {displayedProjects.map((project, index) => (
                 <div
                   key={`project-${project.id}`}
+                  className="min-w-0 w-full"
                   data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
                   data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                 >
@@ -177,11 +178,12 @@ const Portfolio = () => {
         </TabPanel>
 
         <TabPanel value={value} index={1}>
-          <div className="container mx-auto flex justify-center items-center overflow-hidden ">
-            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
+          <div className="w-full min-w-0 mx-auto flex justify-center items-center overflow-visible">
+            <div className="grid w-full min-w-0 grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
               {displayedCertificates.map((certificate, index) => (
                 <div
                   key={`certificate-${certificate.id}`} 
+                  className="min-w-0 w-full"
                   data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
                   data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
                 >
@@ -201,8 +203,8 @@ const Portfolio = () => {
         </TabPanel>
 
         <TabPanel value={value} index={2}>
-          <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-            <div className="grid grid-cols-2 md:grid-cols-4  2xl:grid-cols-6 lg:gap-8 gap-5">
+          <div className="w-full min-w-0 mx-auto flex justify-center items-center overflow-visible pb-[5%]">
+            <div className="grid w-full min-w-0 grid-cols-2 md:grid-cols-4 2xl:grid-cols-6 lg:gap-8 gap-5">
               {techStacks.map((stack, index) => (
                 <div
                   key={`tech-${index}`}

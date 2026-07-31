@@ -1,0 +1,4 @@
+[  291759ms] [WARNING] [.WebGL-0x17bc000fae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://mini-portfolio.framer.website/:0
+[  291975ms] [WARNING] [.WebGL-0x17bc000fae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://mini-portfolio.framer.website/:0
+[  292227ms] [WARNING] [.WebGL-0x17bc000fae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://mini-portfolio.framer.website/:0
+[  292409ms] [WARNING] [.WebGL-0x17bc000fae00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) @ https://mini-portfolio.framer.website/:0

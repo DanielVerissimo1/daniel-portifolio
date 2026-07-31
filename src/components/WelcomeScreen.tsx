@@ -1,131 +1,127 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Github, FileText, UserCheck, Linkedin, Mail } from 'lucide-react';
+import { FileText } from 'lucide-react';
+
+const specialties = ['Full Stack', 'Mobile', 'Front-End', 'Back-End'];
+
+const HeroBackground = () => (
+  <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+    <div
+      className="absolute inset-0 hidden md:block opacity-90"
+      style={{
+        backgroundImage:
+          'linear-gradient(rgba(22, 26, 49, 0.85) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(22, 26, 49, 0.85) 0.6px, transparent 0.6px)',
+        backgroundSize: '110.77px 112.5px',
+        WebkitMaskImage:
+          'radial-gradient(ellipse 58% 105% at 50% 40%, #000 0%, rgba(0,0,0,.78) 52%, transparent 100%)',
+        maskImage:
+          'radial-gradient(ellipse 58% 105% at 50% 40%, #000 0%, rgba(0,0,0,.78) 52%, transparent 100%)',
+      }}
+    />
+    <div className="absolute left-0 right-0 top-[112px] hidden h-px bg-[#161a31]/80 md:block" />
+
+    <div className="absolute left-[-87px] top-0 h-[287px] w-[380px] md:left-[-233px] md:h-[608px] md:w-[805px]">
+      <div className="absolute -left-28 -top-28 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/20 to-white/5 blur-[40px]" />
+      <div className="absolute -left-2 -top-24 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/30 to-white/10 blur-[40px]" />
+      <div className="absolute left-20 -top-40 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-slate-100/30 to-white/10 blur-[40px]" />
+    </div>
+
+    <div className="absolute right-[-233px] top-0 hidden h-[608px] w-[805px] -scale-x-100 md:block">
+      <div className="absolute -left-28 -top-28 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/20 to-white/5 blur-[40px]" />
+      <div className="absolute -left-2 -top-24 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/30 to-white/10 blur-[40px]" />
+      <div className="absolute left-20 -top-40 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-slate-100/30 to-white/10 blur-[40px]" />
+    </div>
+
+  </div>
+);
 
 const HeroSection = () => {
+  const [specialtyIndex, setSpecialtyIndex] = useState(0);
+  const [isSpecialtyVisible, setIsSpecialtyVisible] = useState(true);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
       easing: 'ease-out-quad',
       once: true,
-      offset: 100,
+      offset: 40,
     });
   }, []);
 
-  const dados = {
-    welcomeTexts: ["Daniel", "Verissimo"],
-    titleTexts: ["Desenvolvedor", "Front-End"],
-    icons: [Mail, Linkedin, Github],
-    hrefs: [
-      "mailto:danielsantoss1300@gamil.com", 
-      "https://linkedin.com/in/daniel-verissimo",
-      "https://github.com/DanielVerissimo1"
-    ]
-  }; 
+  useEffect(() => {
+    const hideTimeout = window.setTimeout(() => {
+      setIsSpecialtyVisible(false);
+    }, 2100);
+
+    const changeTimeout = window.setTimeout(() => {
+      setSpecialtyIndex((currentIndex) => (currentIndex + 1) % specialties.length);
+      setIsSpecialtyVisible(true);
+    }, 2500);
+
+    return () => {
+      window.clearTimeout(hideTimeout);
+      window.clearTimeout(changeTimeout);
+    };
+  }, [specialtyIndex]);
 
   return (
-    <section id="hero" className="relative h-screen w-full overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 blur-3xl animate-pulse" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/10 via-transparent to-purple-600/10 blur-2xl animate-float" />
-      </div>
+    <section
+      id="hero"
+      className="relative flex min-h-screen min-h-svh w-full items-center justify-center overflow-hidden bg-[#000319] px-4 pb-16 pt-28 sm:px-6 sm:pt-32"
+    >
+      <HeroBackground />
 
-      {/* Content */}
-      <div className="relative h-full flex flex-col items-center justify-center px-4">
-        <div className="w-full max-w-4xl mx-auto text-center">
-          {/* Icons */}
-          <div 
-            className="flex justify-center gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-10 md:mb-12"
-            data-aos="fade-up"
-            data-aos-delay="100"
+      <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
+        <p
+          className="mb-[22px] text-xs font-normal uppercase leading-[14.4px] tracking-[3px] text-[#c0c2d3] xl:text-base xl:leading-[19.2px] xl:tracking-[4px]"
+          data-aos="fade-up"
+        >
+          Entre a magia da web e a engenharia dos servidores
+        </p>
+
+        <h1
+          className="max-w-[1020px] text-[48px] font-bold leading-[48px] tracking-[-1.6px] text-white xl:text-[72px] xl:leading-[72px] xl:tracking-[-3.6px]"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Todo grande produto começa com uma visão{' '}
+          <span
+            className={`inline-block w-[5.5em] text-left text-[#cbacf9] motion-safe:transition-all motion-safe:duration-300 ${
+              isSpecialtyVisible
+                ? 'translate-y-0 opacity-100 blur-0'
+                : '-translate-y-2 opacity-0 blur-sm'
+            }`}
+            aria-live="polite"
           >
-            {dados.icons.map((Icon, index) => (
-              <div
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={200 + (index * 100)}
-              >
-                <div className="relative cursor-pointer group hover:scale-110 transition-transform duration-300">
-                  <div className="absolute cursor-pointer -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300" />
-                  <div className="relative p-3 sm:p-4 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
-                    <a href={dados.hrefs[index]} target="_blank" rel="noopener noreferrer">
-                      <Icon className="w-6 h-6 sm:w-7 cursor-pointer sm:h-7 md:w-8 md:h-8 text-white" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+            {specialties[specialtyIndex]}
+          </span>
+        </h1>
 
-          {/* Welcome Text */}
-          <div 
-            className="mb-8 sm:mb-10 md:mb-12"
-            data-aos="fade-in"
-            data-aos-delay="300"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              <div className="mb-4 sm:mb-6">
-                {dados.welcomeTexts.map((text, index) => (
-                  <span
-                    key={index}
-                    data-aos="fade-right"
-                    data-aos-delay={400 + (index * 150)}
-                    className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
-                  >
-                    {text}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-wrap justify-center">
-                {dados.titleTexts.map((text, index) => (
-                  <span
-                    key={index}
-                    data-aos="fade-up"
-                    data-aos-delay={500 + (index * 150)}
-                    className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
-                  >
-                    {text}
-                  </span>
-                ))}
-              </div>
-            </h1>
-          </div>
+        <p
+          className="mt-[30px] max-w-[760px] text-base font-normal leading-[19.2px] text-[#e4ecff] md:text-2xl md:leading-[28.8px]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Transformo desafios em aplicações completas, intuitivas e preparadas
+          para crescer.
+        </p>
 
-
-            <div 
-              className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 w-full max-w-md mx-auto"
-              data-aos="fade-up"
-              data-aos-delay="700"
-            >
-            <div 
-              className="flex flex-col sm:flex-row gap-4 pt-4"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <a 
-                href="/Daniel-Verissimo-Font-End.pdf"
-                download
-                className="w-full sm:w-auto"
-              >
-                <button className="w-full cursor-pointer sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium hover:shadow-lg transition-all hover:scale-[1.02] flex items-center gap-2">
-                  <FileText className="w-5 h-5" /> Download CV
-                </button>
-              </a>
-              <a 
-                href="#contato" 
-                className="w-full sm:w-auto"
-              >
-                <button className="w-full cursor-pointer sm:w-auto px-6 py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium hover:bg-[#a855f7]/10 transition-all hover:scale-[1.02] flex items-center gap-2">
-                  <UserCheck className="w-5 h-5" /> Fale Comigo
-                </button>
-              </a>
-            </div>
-            </div>
-        </div>
+        <a
+          href="/Daniel Verissimo - Full-Stack.pdf"
+          download="Daniel Verissimo - Full-Stack.pdf"
+          className="group mt-[30px] flex h-[66px] w-full max-w-[358px] items-center justify-center gap-3 rounded-[14px] border border-white/[0.08] bg-gradient-to-r from-[#161a31] to-[#06091f] px-10 text-lg font-medium tracking-[-0.48px] text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#cbacf9]/40 hover:shadow-[0_12px_40px_rgba(112,76,182,0.22)] sm:w-auto sm:min-w-[220px]"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Baixar currículo
+          <FileText
+            className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-0.5"
+            aria-hidden="true"
+          />
+        </a>
       </div>
     </section>
   );

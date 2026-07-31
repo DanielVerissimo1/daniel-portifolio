@@ -10,7 +10,6 @@ import { ProjectActions } from "@/components/ProjectDetails/ProjectActions";
 import { ProjectTechStack } from "@/components/ProjectDetails/ProjectTechStack";
 import { ProjectImage } from "@/components/ProjectDetails/ProjectImage";
 import { ProjectFeatures } from "@/components/ProjectDetails/ProjectFeatures";
-import { AnimatedBackground } from "@/components/ProjectDetails/AnimatedBackground";
 
 const ProjectDetails = () => {
   const params = useParams();
@@ -27,9 +26,9 @@ const ProjectDetails = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-[#030014] flex items-center justify-center">
+      <div className="min-h-screen bg-[#000319] flex items-center justify-center">
         <div className="text-center space-y-6 animate-fadeIn">
-          <div className="w-16 h-16 md:w-24 md:h-24 mx-auto border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin" />
+          <div className="w-16 h-16 md:w-24 md:h-24 mx-auto border-4 border-[#cbacf9]/25 border-t-[#cbacf9] rounded-full animate-spin" />
           <h2 className="text-xl md:text-3xl font-bold text-white">
             Carregando Projeto...
           </h2>
@@ -39,9 +38,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#030014] px-[2%] sm:px-0 relative overflow-hidden">
-      <AnimatedBackground />
-
+    <div className="min-h-screen bg-[#000319] px-[2%] sm:px-0 relative overflow-hidden">
       <div className="relative">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
           <ProjectHeader title={project.Title} />
@@ -49,12 +46,11 @@ const ProjectDetails = () => {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16">
             <div className="space-y-6 md:space-y-10 animate-slideInLeft">
               <div className="space-y-4 md:space-y-6">
-                <h1 className="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent leading-tight">
+                <h1 className="text-3xl md:text-6xl font-bold text-white leading-tight">
                   {project.Title}
                 </h1>
                 <div className="relative h-1 w-16 md:w-24">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-sm" />
+                  <div className="absolute inset-0 bg-[#cbacf9] rounded-full" />
                 </div>
               </div>
 

@@ -8,7 +8,7 @@ interface ProjectImageProps {
 export const ProjectImage = ({ src, alt }: ProjectImageProps) => {
   return (
     <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#000319] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       <Image
         src={src}
         alt={alt}

@@ -1,0 +1,238 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - generic [ref=f1e7]:
+      - paragraph [ref=f1e12] [cursor=pointer]:
+        - link "About" [ref=f1e13]:
+          - /url: ./#about
+      - paragraph [ref=f1e18] [cursor=pointer]:
+        - link "Projects" [ref=f1e19]:
+          - /url: ./#portfolio
+      - paragraph [ref=f1e24] [cursor=pointer]:
+        - link "Testimonials" [ref=f1e25]:
+          - /url: ./#testimonials
+      - paragraph [ref=f1e30] [cursor=pointer]:
+        - link "Contact" [ref=f1e31]:
+          - /url: ./#contacts
+    - generic [ref=f1e34]:
+      - generic [ref=f1e35]:
+        - heading "Dynamic Web Magic with Next.js" [level=4] [ref=f1e37]
+        - heading "T r a n s f o r m i n g C o n c e p t s i n t o S e a m l e s s U s e r E x p e r i e n c e s" [level=1] [ref=f1e39]:
+          - generic [ref=f1e40]:
+            - generic [ref=f1e41]: T
+            - generic [ref=f1e42]: r
+            - generic [ref=f1e43]: a
+            - generic [ref=f1e44]: "n"
+            - generic [ref=f1e45]: s
+            - generic [ref=f1e46]: f
+            - generic [ref=f1e47]: o
+            - generic [ref=f1e48]: r
+            - generic [ref=f1e49]: m
+            - generic [ref=f1e50]: i
+            - generic [ref=f1e51]: "n"
+            - generic [ref=f1e52]: g
+          - generic [ref=f1e53]:
+            - generic [ref=f1e54]: C
+            - generic [ref=f1e55]: o
+            - generic [ref=f1e56]: "n"
+            - generic [ref=f1e57]: c
+            - generic [ref=f1e58]: e
+            - generic [ref=f1e59]: p
+            - generic [ref=f1e60]: t
+            - generic [ref=f1e61]: s
+          - generic [ref=f1e62]:
+            - generic [ref=f1e63]: i
+            - generic [ref=f1e64]: "n"
+            - generic [ref=f1e65]: t
+            - generic [ref=f1e66]: o
+          - generic [ref=f1e67]:
+            - generic [ref=f1e68]: S
+            - generic [ref=f1e69]: e
+            - generic [ref=f1e70]: a
+            - generic [ref=f1e71]: m
+            - generic [ref=f1e72]: l
+            - generic [ref=f1e73]: e
+            - generic [ref=f1e74]: s
+            - generic [ref=f1e75]: s
+          - generic [ref=f1e76]:
+            - generic [ref=f1e77]:
+              - generic [ref=f1e78]: U
+              - generic [ref=f1e79]: s
+              - generic [ref=f1e80]: e
+              - generic [ref=f1e81]: r
+            - generic [ref=f1e82]:
+              - generic [ref=f1e83]: E
+              - generic [ref=f1e84]: x
+              - generic [ref=f1e85]: p
+              - generic [ref=f1e86]: e
+              - generic [ref=f1e87]: r
+              - generic [ref=f1e88]: i
+              - generic [ref=f1e89]: e
+              - generic [ref=f1e90]: "n"
+              - generic [ref=f1e91]: c
+              - generic [ref=f1e92]: e
+              - generic [ref=f1e93]: s
+      - paragraph [ref=f1e95]: Hi! I’m John Doe, a Next.js Developer based in The USA
+      - paragraph [ref=f1e99] [cursor=pointer]: See my work
+    - generic [ref=f1e108]:
+      - generic [ref=f1e109]:
+        - heading "I prioritize client collaboration, fostering open communication" [level=2] [ref=f1e124]
+        - generic [ref=f1e125]:
+          - heading "I’m very flexible with time zone communications" [level=2] [ref=f1e134]
+          - generic [ref=f1e136]:
+            - generic [ref=f1e138]:
+              - generic [ref=f1e142]:
+                - list [ref=f1e143]:
+                  - listitem "1 of 4" [ref=f1e144]:
+                    - paragraph [ref=f1e148]: ReactJS
+                  - listitem "2 of 4" [ref=f1e149]:
+                    - paragraph [ref=f1e153]: VueJS
+                  - listitem "3 of 4" [ref=f1e154]:
+                    - paragraph [ref=f1e158]: NuxtJS
+                  - listitem "4 of 4" [ref=f1e159]:
+                    - paragraph [ref=f1e163]: GraphQL
+                - group "Carousel pagination controls"
+              - generic [ref=f1e167]:
+                - list [ref=f1e168]:
+                  - listitem "1 of 4" [ref=f1e169]:
+                    - paragraph [ref=f1e173]: ReactJS
+                  - listitem "2 of 4" [ref=f1e174]:
+                    - paragraph [ref=f1e178]: Express
+                  - listitem "3 of 4" [ref=f1e179]:
+                    - paragraph [ref=f1e183]: Typescript
+                  - listitem "4 of 4" [ref=f1e184]:
+                    - paragraph [ref=f1e188]: NextJS
+                - group "Carousel pagination controls"
+            - generic [ref=f1e189]:
+              - paragraph [ref=f1e191]: I constantly try to improve
+              - heading "My tech stack" [level=2] [ref=f1e193]
+      - generic [ref=f1e194]:
+        - generic [ref=f1e195]:
+          - heading "Tech enthusiast with a passion for development" [level=3] [ref=f1e206]
+          - generic [ref=f1e208]:
+            - heading "Do you want to start a project together?" [level=3] [ref=f1e211]
+            - paragraph [ref=f1e219] [cursor=pointer]: Copy my email address
+        - generic [ref=f1e227]:
+          - heading "The Inside Scoop" [level=4] [ref=f1e229]
+          - heading "Currently building a JS Animation library" [level=2] [ref=f1e231]
+    - generic [ref=f1e236]:
+      - heading "A small selection of recent projects" [level=2] [ref=f1e238]
+      - generic [ref=f1e239]:
+        - generic [ref=f1e249]:
+          - generic [ref=f1e250]:
+            - paragraph [ref=f1e252]: 3D Solar System Planets to Explore
+            - paragraph [ref=f1e254]: Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.
+          - paragraph [ref=f1e281] [cursor=pointer]: Check Live Site
+        - generic [ref=f1e297]:
+          - generic [ref=f1e298]:
+            - paragraph [ref=f1e300]: Yoom - Video Conferencing App
+            - paragraph [ref=f1e302]: Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.
+          - paragraph [ref=f1e329] [cursor=pointer]: Check Live Site
+        - generic [ref=f1e345]:
+          - generic [ref=f1e346]:
+            - paragraph [ref=f1e348]: AI Image SaaS - Canva Application
+            - paragraph [ref=f1e350]: A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.
+          - paragraph [ref=f1e377] [cursor=pointer]: Check Live Site
+        - generic [ref=f1e393]:
+          - generic [ref=f1e394]:
+            - paragraph [ref=f1e396]: Animated Apple Iphone 3D Website
+            - paragraph [ref=f1e398]: Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.
+          - paragraph [ref=f1e425] [cursor=pointer]: Check Live Site
+    - generic [ref=f1e432]:
+      - heading "Kind words from satisfied clients" [level=2] [ref=f1e434]
+      - generic [ref=f1e437]:
+        - list [ref=f1e438]:
+          - listitem "1 of 5" [ref=f1e439]:
+            - generic [ref=f1e440]:
+              - paragraph [ref=f1e442]: Collaborating with John was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. John's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, John is the ideal partner.
+              - generic [ref=f1e446]:
+                - paragraph [ref=f1e448]: Michael Johnson
+                - paragraph [ref=f1e450]: Director of AlphaStream Technologies
+          - listitem "2 of 5" [ref=f1e453]:
+            - generic [ref=f1e454]:
+              - paragraph [ref=f1e456]: Collaborating with John was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. John's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, John is the ideal partner.
+              - generic [ref=f1e460]:
+                - paragraph [ref=f1e462]: Michael Johnson
+                - paragraph [ref=f1e464]: Director of AlphaStream Technologies
+          - listitem [ref=f1e467]:
+            - generic [ref=f1e468]:
+              - paragraph [ref=f1e470]: Collaborating with John was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. John's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, John is the ideal partner.
+              - generic [ref=f1e474]:
+                - paragraph [ref=f1e476]: Michael Johnson
+                - paragraph [ref=f1e478]: Director of AlphaStream Technologies
+          - listitem [ref=f1e481]:
+            - generic [ref=f1e482]:
+              - paragraph [ref=f1e484]: Collaborating with John was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. John's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, John is the ideal partner.
+              - generic [ref=f1e488]:
+                - paragraph [ref=f1e490]: Michael Johnson
+                - paragraph [ref=f1e492]: Director of AlphaStream Technologies
+          - listitem [ref=f1e495]:
+            - generic [ref=f1e496]:
+              - paragraph [ref=f1e498]: Collaborating with John was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. John's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, John is the ideal partner.
+              - generic [ref=f1e502]:
+                - paragraph [ref=f1e504]: Michael Johnson
+                - paragraph [ref=f1e506]: Director of AlphaStream Technologies
+        - group "Carousel pagination controls"
+      - list [ref=f1e512]:
+        - listitem [ref=f1e513]
+        - listitem [ref=f1e519]
+        - listitem [ref=f1e525]
+        - listitem [ref=f1e531]
+        - listitem [ref=f1e537]
+        - listitem [ref=f1e543]
+        - listitem [ref=f1e549]
+        - listitem [ref=f1e555]
+        - listitem [ref=f1e561]
+        - listitem [ref=f1e567]
+        - listitem [ref=f1e573]
+        - listitem [ref=f1e579]
+        - listitem [ref=f1e585]
+        - listitem [ref=f1e591]
+        - listitem [ref=f1e597]
+    - generic [ref=f1e603]:
+      - heading "My work experince" [level=2] [ref=f1e605]
+      - generic [ref=f1e606]:
+        - generic [ref=f1e614]:
+          - paragraph [ref=f1e616]: Frontend Engineer Intern
+          - paragraph [ref=f1e618]: Assisted in the development of a web-based platform using React.js, enhancing interactivity.
+        - generic [ref=f1e626]:
+          - paragraph [ref=f1e628]: Mobile App Dev - JSM Tech
+          - paragraph [ref=f1e630]: Designed and developed mobile app for both iOS & Android platforms using React Native.
+        - generic [ref=f1e638]:
+          - paragraph [ref=f1e640]: Freelance App Dev Project
+          - paragraph [ref=f1e642]: Led the dev of a mobile app for a client, from initial concept to deployment on app stores.
+        - generic [ref=f1e650]:
+          - paragraph [ref=f1e652]: Lead Frontend Developer
+          - paragraph [ref=f1e654]: Developed and maintained user-facing features using modern frontend technologies.
+    - generic [ref=f1e655]:
+      - paragraph [ref=f1e657]: My approach
+      - generic [ref=f1e658]:
+        - paragraph [ref=f1e667] [cursor=pointer]: Phase 1
+        - paragraph [ref=f1e712] [cursor=pointer]: Phase 2
+        - paragraph [ref=f1e757] [cursor=pointer]: Phase 3
+    - generic [ref=f1e794]:
+      - generic [ref=f1e795]:
+        - heading "Ready to take your digital presence to the next level?" [level=2] [ref=f1e798]
+        - paragraph [ref=f1e801]: Reach out to me today and let's discuss how I can help you achieve your goals.
+      - generic [ref=f1e802]:
+        - link [ref=f1e805] [cursor=pointer]:
+          - /url: https://renat.framer.website/
+          - paragraph [ref=f1e807]: Get in touch
+        - generic [ref=f1e813]:
+          - paragraph [ref=f1e815]:
+            - text: Copyright ©2025
+            - link "Renat Usmanov" [ref=f1e816] [cursor=pointer]:
+              - /url: https://renat.design/
+          - generic [ref=f1e817]:
+            - link [ref=f1e818] [cursor=pointer]:
+              - /url: ./
+            - link [ref=f1e824] [cursor=pointer]:
+              - /url: ./
+            - link [ref=f1e830] [cursor=pointer]:
+              - /url: ./
+            - link [ref=f1e836] [cursor=pointer]:
+              - /url: ./
+            - link [ref=f1e842] [cursor=pointer]:
+              - /url: ./
+  - link [ref=f1e852] [cursor=pointer]:
+    - /url: https://www.framer.com
+    - img "Framer - Custom site builder" [ref=f1e856]

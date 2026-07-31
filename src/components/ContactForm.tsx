@@ -54,7 +54,8 @@ const ContactForm = () => {
         title: 'Sucesso!',
         text: 'Mensagem enviada com sucesso!',
         icon: 'success',
-        confirmButtonColor: '#6366f1',
+        confirmButtonColor: '#cbacf9',
+        color: '#000319',
         timer: 2000,
         timerProgressBar: true,
       });
@@ -65,7 +66,8 @@ const ContactForm = () => {
         title: 'Erro!',
         text: 'Ocorreu um problema ao enviar sua mensagem',
         icon: 'error',
-        confirmButtonColor: '#6366f1',
+        confirmButtonColor: '#cbacf9',
+        color: '#000319',
       });
     } finally {
       setIsSubmitting(false);
@@ -79,7 +81,7 @@ const ContactForm = () => {
         data-aos-delay="100"
         className="relative group"
       >
-        <User className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+        <User className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#cbacf9] transition-colors" />
         <input
           type="text"
           name="name"
@@ -87,7 +89,7 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           disabled={isSubmitting}
-          className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50"
+          className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#cbacf9]/30 focus:border-[#cbacf9]/50 transition-all duration-300 hover:border-[#cbacf9]/30 disabled:opacity-50"
           required
         />
       </div>
@@ -97,7 +99,7 @@ const ContactForm = () => {
         data-aos-delay="200"
         className="relative group"
       >
-        <Mail className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+        <Mail className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#cbacf9] transition-colors" />
         <input
           type="email"
           name="email"
@@ -105,7 +107,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           disabled={isSubmitting}
-          className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 disabled:opacity-50"
+          className="w-full p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#cbacf9]/30 focus:border-[#cbacf9]/50 transition-all duration-300 hover:border-[#cbacf9]/30 disabled:opacity-50"
           required
         />
       </div>
@@ -115,14 +117,14 @@ const ContactForm = () => {
         data-aos-delay="300"
         className="relative group"
       >
-        <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
+        <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#cbacf9] transition-colors" />
         <textarea
           name="message"
           placeholder="Sua mensagem"
           value={formData.message}
           onChange={handleChange}
           disabled={isSubmitting}
-          className="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#6366f1]/30 transition-all duration-300 hover:border-[#6366f1]/30 h-[9.9rem] disabled:opacity-50"
+          className="w-full resize-none p-4 pl-12 bg-white/10 rounded-xl border border-white/20 placeholder-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-[#cbacf9]/30 focus:border-[#cbacf9]/50 transition-all duration-300 hover:border-[#cbacf9]/30 h-[9.9rem] disabled:opacity-50"
           required
         />
       </div>
@@ -132,7 +134,7 @@ const ContactForm = () => {
         data-aos-delay="400"
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+        className="w-full bg-[#cbacf9] text-[#000319] py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:bg-[#d8c1fa] hover:shadow-lg hover:shadow-[#cbacf9]/10 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
       >
         <Send className="w-5 h-5" />
         {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}

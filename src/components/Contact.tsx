@@ -24,19 +24,9 @@ const Contact = () => {
         <h2
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+          className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-white"
         >
-          <span
-            style={{
-              color: "#6366f1",
-              backgroundImage: "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Entre em Contato
-          </span>
+          Entre em <span className="text-[#cbacf9]">Contato</span>
         </h2>
         <p
           data-aos="fade-up"
@@ -53,11 +43,11 @@ const Contact = () => {
       >
         <div className="container px-[1%] grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div
-            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-8 transform transition-all duration-500 hover:shadow-[#6366f1]/10"
+            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-xl p-8 transform transition-all duration-500 border border-white/5 hover:border-[#cbacf9]/20 hover:shadow-[#cbacf9]/5"
           >
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                Envie uma mensagem!
+              <h2 className="text-3xl font-bold mb-3 text-white">
+                Envie uma <span className="text-[#cbacf9]">mensagem!</span>
               </h2>
               <p className="text-gray-400">
                 Me conte mais como posso te ajudar!
@@ -69,11 +59,11 @@ const Contact = () => {
 
           {/* Coluna das Redes Sociais */}
           <div
-            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-8 transform transition-all duration-500 hover:shadow-[#6366f1]/10"
+            className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-xl p-8 transform transition-all duration-500 border border-white/5 hover:border-[#cbacf9]/20 hover:shadow-[#cbacf9]/5"
           >
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                Acesse minhas redes:
+              <h2 className="text-3xl font-bold mb-3 text-white">
+                <span className="text-[#cbacf9]">Acesse</span> minhas redes:
               </h2>
               <p className="text-gray-400  mb-7">
                 Entre em contato e vamos criar algo juntos!

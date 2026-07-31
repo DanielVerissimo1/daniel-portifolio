@@ -2,7 +2,6 @@ import {
   Linkedin,
   Github,
   Instagram,
-  Youtube,
 } from "lucide-react";
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -45,15 +44,6 @@ export const socialLinks: SocialLink[] = [
     url: "https://www.instagram.com/daniel.verissimo1/",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
-  },
-  {
-    name: "YouTube",
-    displayName: "YouTube",
-    subText: "@Dandan.tutoriais",
-    icon: Youtube,
-    url: "https://www.youtube.com/@Dandan.tutoriais",
-    color: "#FF0000",
-    gradient: "from-[#FF0000] to-[#CC0000]",
   },
   {
     name: "GitHub",

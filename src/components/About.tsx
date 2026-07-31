@@ -30,11 +30,11 @@ const AboutSection = () => {
       
       <div className="text-center mb-12 px-[5%]">
         <h2 
-          className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+          className="text-4xl md:text-5xl font-bold text-white"
           data-aos="zoom-in-up"
           data-aos-duration="600"
         >
-          Sobre Mim
+          Sobre <span className="text-[#cbacf9]">Mim</span>
         </h2>
         <p 
           className="mt-4 text-gray-400 max-w-2xl mx-auto text-lg flex items-center justify-center gap-2"
@@ -56,7 +56,7 @@ const AboutSection = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
+            <span className="text-[#cbacf9]">
               Olá, Me Chamo
             </span>
             <span 
@@ -94,13 +94,12 @@ const AboutSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 w-full">
             <a 
               href="#contato" 
-              className="w-full sm:w-auto"
+              className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/[0.08] bg-gradient-to-r from-[#161a31] to-[#06091f] px-6 py-3 font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#cbacf9]/40 hover:shadow-[0_12px_40px_rgba(112,76,182,0.22)] sm:w-auto"
               data-aos="fade-up"
               data-aos-duration="800"
             >
-              <button className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r text-center justify-center from-[#6366f1] to-[#a855f7] text-white font-medium hover:shadow-lg transition-all flex items-center gap-2 cursor-pointer hover:scale-105">
-                <UserCheck className="w-5 h-5" /> Fale Comigo
-              </button>
+              Fale Comigo
+              <UserCheck className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-0.5" />
             </a>
 
             <a 
@@ -109,7 +108,7 @@ const AboutSection = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <button className="w-full sm:w-auto px-6 py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium flex items-center justify-center gap-2 hover:bg-[#a855f7]/10 hover:scale-105 cursor-pointer">
+              <button className="w-full sm:w-auto px-6 py-3 rounded-lg border border-[#cbacf9]/50 text-[#cbacf9] font-medium flex items-center justify-center gap-2 hover:bg-[#cbacf9]/10 hover:scale-105 cursor-pointer">
                 <Code className="w-5 h-5" /> Ver Projetos
               </button>
             </a>
@@ -123,13 +122,8 @@ const AboutSection = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <div className="absolute -inset-6 opacity-[25%] z-0 hidden sm:block">
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl animate-spin-slower" />
-              <div className="absolute inset-0 bg-gradient-to-l from-fuchsia-500 via-rose-500 to-pink-600 rounded-full blur-2xl animate-pulse-slow opacity-50" />
-            </div>
-
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(120,119,198,0.3)] transform transition-all duration-700 group-hover:scale-105 relative">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden transform transition-all duration-700 group-hover:scale-105 relative">
                 <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
                 
                 <Image

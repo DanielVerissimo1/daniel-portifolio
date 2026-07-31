@@ -79,9 +79,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             <button
               onClick={() => navigateToSection("hero")}
-              className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent hover:from-blue-500 hover:to-purple-500 transition-all duration-300 flex-shrink-0"
+              className="text-lg sm:text-2xl font-bold text-white transition-colors duration-300 flex-shrink-0 hover:text-[#cbacf9]"
             >
-              DanielVerissimo
+              Daniel<span className="text-[#cbacf9]">Verissimo</span>
             </button>
 
             <div className="hidden md:flex items-center space-x-10">
@@ -89,13 +89,13 @@ const Navbar = () => {
                 <button key={item.id} onClick={() => navigateToSection(item.id)} className="group relative py-2">
                   <span
                     className={`text-base font-medium transition-all duration-300 cursor-pointer ${
-                      currentSection === item.id ? "text-white" : "text-gray-300 group-hover:text-white"
+                      currentSection === item.id ? "text-[#cbacf9]" : "text-gray-300 group-hover:text-[#cbacf9]"
                     }`}
                   >
                     {item.label}
                   </span>
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 ${
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#cbacf9] transition-all duration-300 ${
                       currentSection === item.id ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                     }`}
                   />
@@ -105,7 +105,7 @@ const Navbar = () => {
 
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden p-2 text-gray-300 hover:text-white transition-colors duration-200"
+              className="md:hidden p-2 text-gray-300 hover:text-[#cbacf9] transition-colors duration-200"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -122,8 +122,8 @@ const Navbar = () => {
                   onClick={() => navigateToSection(item.id)}
                   className={`block w-full text-left px-4 py-3 rounded-lg text-base transition-all duration-200 ${
                     currentSection === item.id
-                      ? "bg-gray-800 text-white font-medium"
-                      : "text-gray-300 hover:bg-gray-800/50 hover:text-white"
+                      ? "bg-[#cbacf9]/10 text-[#cbacf9] font-medium"
+                      : "text-gray-300 hover:bg-[#cbacf9]/5 hover:text-[#cbacf9]"
                   }`}
                 >
                   {item.label}

@@ -17,9 +17,8 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
 
   return (
     <div className="group relative w-full h-full">
-      <div className="relative h-full overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20 hover:border-purple-500/30">
-        {/* Efeito de gradiente */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+      <div className="relative h-full overflow-hidden rounded-xl bg-[#06091f]/90 backdrop-blur-lg border border-white/10 shadow-lg transition-all duration-300 hover:shadow-[0_12px_35px_rgba(203,172,249,0.08)] hover:border-[#cbacf9]/30">
+        <div className="absolute inset-0 bg-[#cbacf9]/[0.025] opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
     
         {/* Conteúdo principal */}
         <div className="relative h-full flex flex-col p-5 z-10">
@@ -35,7 +34,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
           
         
           <div className="mt-4 space-y-3 flex-1 flex flex-col">
-            <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-200 via-purple-200 to-pink-200 bg-clip-text text-transparent">
+            <h3 className="text-xl font-semibold text-white group-hover:text-[#cbacf9] transition-colors">
               {Title}
             </h3>
             
@@ -49,7 +48,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
                   {stacks.map((stack, index) => (
                     <span
                       key={index} 
-                      className="px-3 py-1.5 text-xs font-medium bg-gradient-to-r  from-blue-500/20 to-purple-500/20 text-blue-200 rounded-md"
+                      className="px-3 py-1.5 text-xs font-medium bg-gradient-to-r from-[#161a31] to-[#06091f] text-white border border-white/[0.08] rounded-md transition-colors duration-300 hover:border-[#cbacf9]/40"
         
                     >
                       {stack}
@@ -67,7 +66,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
                   href={ProjectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-blue-100 hover:text-blue-200 "
+                  className="inline-flex items-center space-x-2 text-white/80 hover:text-[#cbacf9] transition-colors"
                 >
                   <span className="text-md font-medium">Ver No Ar</span>
                   <ExternalLink className="w-4 h-4" />
@@ -78,7 +77,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
 
               <Link
                 href={`/project/${toSlug(Title)}`}
-                className="flex items-center space-x-2 text-blue-100 hover:text-blue-300 transition-colors duration-200 px-3 py-1.5 rounded-lg bg-blue-100/10 hover:bg-blue-200/20 "
+                className="flex items-center space-x-2 text-[#cbacf9] hover:text-[#000319] transition-colors duration-200 px-3 py-1.5 rounded-lg border border-[#cbacf9]/20 bg-[#cbacf9]/10 hover:bg-[#cbacf9]"
               >
                 <span className="text-md font-medium">Detalhes</span>
                 <ArrowRight className="w-4 h-4" />

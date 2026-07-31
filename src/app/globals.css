@@ -16,7 +16,7 @@
   html,
   body {
     overflow-x: hidden;
-    background: #030014;
+    background: #000319;
     scroll-behavior: smooth !important;
   }
 
@@ -28,7 +28,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(3, 0, 20, 0.4);
+    background: rgba(0, 3, 25, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(99, 102, 241, 0.1);
@@ -142,13 +142,6 @@
 
   [data-aos] {
     will-change: transform, opacity;
-  }
-
-  .bg-grid-pattern {
-    background-image: 
-      linear-gradient(to right, currentColor 1px, transparent 1px),
-      linear-gradient(to bottom, currentColor 1px, transparent 1px);
-    background-size: 40px 40px;
   }
 
 }
