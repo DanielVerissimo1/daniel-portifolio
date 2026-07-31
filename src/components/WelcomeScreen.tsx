@@ -70,26 +70,26 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen min-h-svh w-full items-center justify-center overflow-hidden bg-[#000319] px-4 pb-16 pt-28 sm:px-6 sm:pt-32"
+      className="relative flex min-h-screen min-h-svh w-full items-center justify-center overflow-hidden bg-[#000319] px-5 pb-12 pt-24 sm:px-8 sm:pb-16 sm:pt-28 md:px-10 md:pb-20 md:pt-32"
     >
       <HeroBackground />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
         <p
-          className="mb-[22px] text-xs font-normal uppercase leading-[14.4px] tracking-[3px] text-[#c0c2d3] xl:text-base xl:leading-[19.2px] xl:tracking-[4px]"
+          className="mb-4 max-w-[290px] text-[10px] font-normal uppercase leading-5 tracking-[2px] text-[#c0c2d3] sm:mb-5 sm:max-w-lg sm:text-xs sm:tracking-[3px] md:max-w-2xl md:text-sm xl:text-base xl:leading-[19.2px] xl:tracking-[4px]"
           data-aos="fade-up"
         >
           Entre a magia da web e a engenharia dos servidores
         </p>
 
         <h1
-          className="max-w-[1020px] text-[48px] font-bold leading-[48px] tracking-[-1.6px] text-white xl:text-[72px] xl:leading-[72px] xl:tracking-[-3.6px]"
+          className="max-w-[1020px] text-[36px] font-bold leading-[40px] tracking-[-1.2px] text-white min-[390px]:text-[40px] min-[390px]:leading-[44px] sm:text-[48px] sm:leading-[52px] sm:tracking-[-1.6px] md:text-[56px] md:leading-[60px] lg:text-[64px] lg:leading-[66px] xl:text-[72px] xl:leading-[72px] xl:tracking-[-3.6px]"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           Todo grande produto começa com uma visão{' '}
           <span
-            className={`inline-block w-[5.5em] text-left text-[#cbacf9] motion-safe:transition-all motion-safe:duration-300 ${
+            className={`mt-2 block h-[1.1em] w-full text-center text-[#cbacf9] motion-safe:transition-all motion-safe:duration-300 lg:mt-0 lg:inline-block lg:w-[5.5em] lg:text-left ${
               isSpecialtyVisible
                 ? 'translate-y-0 opacity-100 blur-0'
                 : '-translate-y-2 opacity-0 blur-sm'
@@ -101,7 +101,7 @@ const HeroSection = () => {
         </h1>
 
         <p
-          className="mt-[30px] max-w-[760px] text-base font-normal leading-[19.2px] text-[#e4ecff] md:text-2xl md:leading-[28.8px]"
+          className="mt-6 max-w-[680px] text-sm font-normal leading-6 text-[#e4ecff] sm:mt-7 sm:text-lg sm:leading-7 md:max-w-[760px] md:text-xl md:leading-8 lg:mt-[30px] lg:text-2xl lg:leading-[28.8px]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -112,7 +112,7 @@ const HeroSection = () => {
         <a
           href="/Daniel Verissimo - Full-Stack.pdf"
           download="Daniel Verissimo - Full-Stack.pdf"
-          className="group mt-[30px] flex h-[66px] w-full max-w-[358px] items-center justify-center gap-3 rounded-[14px] border border-white/[0.08] bg-gradient-to-r from-[#161a31] to-[#06091f] px-10 text-lg font-medium tracking-[-0.48px] text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#cbacf9]/40 hover:shadow-[0_12px_40px_rgba(112,76,182,0.22)] sm:w-auto sm:min-w-[220px]"
+          className="group mt-7 flex h-14 w-full max-w-[320px] items-center justify-center gap-3 rounded-[14px] border border-white/[0.08] bg-gradient-to-r from-[#161a31] to-[#06091f] px-6 text-base font-medium tracking-[-0.48px] text-white transition duration-300 hover:-translate-y-0.5 hover:border-[#cbacf9]/40 hover:shadow-[0_12px_40px_rgba(112,76,182,0.22)] sm:mt-[30px] sm:h-[66px] sm:w-auto sm:min-w-[220px] sm:px-10 sm:text-lg"
           data-aos="fade-up"
           data-aos-delay="300"
         >
