@@ -9,20 +9,6 @@ const specialties = ['Full Stack', 'Mobile', 'Front-End', 'Back-End'];
 
 const HeroBackground = () => (
   <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-    <div
-      className="absolute inset-0 hidden md:block opacity-90"
-      style={{
-        backgroundImage:
-          'linear-gradient(rgba(22, 26, 49, 0.85) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(22, 26, 49, 0.85) 0.6px, transparent 0.6px)',
-        backgroundSize: '110.77px 112.5px',
-        WebkitMaskImage:
-          'radial-gradient(ellipse 58% 105% at 50% 40%, #000 0%, rgba(0,0,0,.78) 52%, transparent 100%)',
-        maskImage:
-          'radial-gradient(ellipse 58% 105% at 50% 40%, #000 0%, rgba(0,0,0,.78) 52%, transparent 100%)',
-      }}
-    />
-    <div className="absolute left-0 right-0 top-[112px] hidden h-px bg-[#161a31]/80 md:block" />
-
     <div className="absolute left-[-87px] top-0 h-[287px] w-[380px] md:left-[-233px] md:h-[608px] md:w-[805px]">
       <div className="absolute -left-28 -top-28 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/20 to-white/5 blur-[40px]" />
       <div className="absolute -left-2 -top-24 h-8 w-[620px] rotate-45 bg-gradient-to-r from-transparent via-white/30 to-white/10 blur-[40px]" />

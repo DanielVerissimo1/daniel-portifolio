@@ -73,7 +73,7 @@ const AboutSection = () => {
             data-aos="fade-right"
             data-aos-duration="1500"
           >
-            Sou desenvolvedor Front-End movido pela curiosidade e pela vontade de criar experiências digitais marcantes. Do servidor à interface final, acredito que cada linha de código conecta inovação e propósito. Gosto de unir tecnologia e negócios para gerar soluções de valor real. Guiado pela fé em Deus, busco resultados com significado e impacto positivo.
+            Sou desenvolvedor Full-Stack movido pela curiosidade e pela vontade de criar experiências digitais marcantes. Do servidor à interface final, acredito que cada linha de código conecta inovação e propósito. Gosto de unir tecnologia e negócios para gerar soluções de valor real. Guiado pela fé em Deus, busco resultados com significado e impacto positivo.
           </p>
 
           {/* Quote */}

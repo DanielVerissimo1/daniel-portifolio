@@ -14,14 +14,21 @@ interface CardProjectProps {
 }
 
 const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link: ProjectLink, stacks }) => {
+  const detailsHref = `/project/${toSlug(Title)}`;
 
   return (
     <div className="group relative w-full h-full">
-      <div className="relative h-full overflow-hidden rounded-xl bg-[#06091f]/90 backdrop-blur-lg border border-white/10 shadow-lg transition-all duration-300 hover:shadow-[0_12px_35px_rgba(203,172,249,0.08)] hover:border-[#cbacf9]/30">
+      <div className="relative h-full cursor-pointer overflow-hidden rounded-xl bg-[#06091f]/90 backdrop-blur-lg border border-white/10 shadow-lg transition-all duration-300 hover:shadow-[0_12px_35px_rgba(203,172,249,0.08)] hover:border-[#cbacf9]/30">
         <div className="absolute inset-0 bg-[#cbacf9]/[0.025] opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+        <Link
+          href={detailsHref}
+          aria-label={`Ver detalhes do projeto ${Title}`}
+          className="absolute inset-0 z-10 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#cbacf9]"
+        />
     
         {/* Conteúdo principal */}
-        <div className="relative h-full flex flex-col p-5 z-10">
+        <div className="pointer-events-none relative z-20 flex h-full flex-col p-5">
           {/* Imagem do projeto */}
           <div className="relative overflow-hidden rounded-lg aspect-video">
             <Image
@@ -66,7 +73,7 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
                   href={ProjectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-white/80 hover:text-[#cbacf9] transition-colors"
+                  className="pointer-events-auto relative z-30 inline-flex items-center space-x-2 text-white/80 hover:text-[#cbacf9] transition-colors"
                 >
                   <span className="text-md font-medium">Ver No Ar</span>
                   <ExternalLink className="w-4 h-4" />
@@ -76,8 +83,8 @@ const CardProject: React.FC<CardProjectProps> = ({ Img, Title, Description, Link
               )}
 
               <Link
-                href={`/project/${toSlug(Title)}`}
-                className="flex items-center space-x-2 text-[#cbacf9] hover:text-[#000319] transition-colors duration-200 px-3 py-1.5 rounded-lg border border-[#cbacf9]/20 bg-[#cbacf9]/10 hover:bg-[#cbacf9]"
+                href={detailsHref}
+                className="pointer-events-auto relative z-30 flex items-center space-x-2 text-[#cbacf9] hover:text-[#000319] transition-colors duration-200 px-3 py-1.5 rounded-lg border border-[#cbacf9]/20 bg-[#cbacf9]/10 hover:bg-[#cbacf9]"
               >
                 <span className="text-md font-medium">Detalhes</span>
                 <ArrowRight className="w-4 h-4" />
