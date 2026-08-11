@@ -61,13 +61,6 @@ const HeroSection = () => {
       <HeroBackground />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1100px] flex-col items-center text-center">
-        <p
-          className="mb-4 max-w-[290px] text-[10px] font-normal uppercase leading-5 tracking-[2px] text-[#c0c2d3] sm:mb-5 sm:max-w-lg sm:text-xs sm:tracking-[3px] md:max-w-2xl md:text-sm xl:text-base xl:leading-[19.2px] xl:tracking-[4px]"
-          data-aos="fade-up"
-        >
-          Entre a magia da web e a engenharia dos servidores
-        </p>
-
         <h1
           className="max-w-[1020px] text-[36px] font-bold leading-[40px] tracking-[-1.2px] text-white min-[390px]:text-[40px] min-[390px]:leading-[44px] sm:text-[48px] sm:leading-[52px] sm:tracking-[-1.6px] md:text-[56px] md:leading-[60px] lg:text-[64px] lg:leading-[66px] xl:text-[72px] xl:leading-[72px] xl:tracking-[-3.6px]"
           data-aos="fade-up"
